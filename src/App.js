@@ -88,14 +88,14 @@ function App() {
     <section className="section-center">
       <form action="" className="grocery-form" onSubmit={handleSubmit}>
         {alert.show && <Alert {...alert} removeAlert={showAlert} list={list} />}
-        <h3 className="title">Grocery Bud</h3>
+        <h3 className="title">To Do List</h3>
         <div className="form-control">
           <input
             type="text"
             className="grocery"
             value={name}
             onChange={handleChange}
-            placeholder="e.g. eggs"
+            placeholder="e.g. need to buy eggs"
           />
           <button className="submit-btn">
             {isEditing ? "Edit" : "Submit"}
